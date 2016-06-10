@@ -1,6 +1,10 @@
 {
+  "dependencies": {
+    "posthtml": "^0.8.1",
+    "simple-loop": "0.0.4"
+  },
   "name": "jstransformer-posthtml",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "PostHTML support for JSTransformers.",
   "keywords": [
     "jstransformer"
@@ -27,9 +31,5 @@
     "name": "JSTransformers Team",
     "url": "http://github.com/orgs/jstransformers/people"
   },
-  "license": "MIT",
-  "dependencies": {
-    "posthtml": "^0.8.1",
-    "simple-loop": "0.0.4"
-  }
+  "license": "MIT"
 }
