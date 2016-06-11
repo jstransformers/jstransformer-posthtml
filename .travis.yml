@@ -2,7 +2,8 @@ language: node_js
 sudo: false
 
 node_js:
-  - "0.10"
+  # Node.js 0.10 support has been dropped in PostHTML
+  #- "0.10"
   - "0.12"
   - "4"
   - "5"
