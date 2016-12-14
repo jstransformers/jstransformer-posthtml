@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 
 var posthtml = require('posthtml')
 var loop = require('simple-loop')
@@ -15,10 +15,10 @@ exports.renderAsync = function (str, options) {
       var plugin = null
       switch (typeof i) {
         case 'number':
-          if (typeof item == 'string') {
+          if (typeof item === 'string') {
+            // eslint-disable-next-line import/no-dynamic-require
             plugin = require(item)()
-          }
-          else {
+          } else {
             plugin = item
           }
           break
@@ -26,6 +26,7 @@ exports.renderAsync = function (str, options) {
           plugin = i
           break
         case 'string':
+          // eslint-disable-next-line import/no-dynamic-require
           plugin = require(i)(item)
           break
         default:
