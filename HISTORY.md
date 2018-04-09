@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.2.0: 2017-12-13
+
+- Update to `posthtml@^0.11.0`
+
 ## v0.1.1: 2016-11-14
 
 - Update to `posthtml@^0.9.0`

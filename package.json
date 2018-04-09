@@ -1,10 +1,10 @@
 {
   "dependencies": {
-    "posthtml": "^0.9.0",
+    "posthtml": "^0.11.0",
     "simple-loop": "^0.0.4"
   },
   "name": "jstransformer-posthtml",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "PostHTML support for JSTransformers.",
   "keywords": [
     "jstransformer"
@@ -15,12 +15,12 @@
   "devDependencies": {
     "posthtml-custom-elements": "^1.0.2",
     "test-jstransformer": "^1.0.0",
-    "xo": "^0.18.1"
+    "xo": "*"
   },
   "scripts": {
     "coverage": "test-jstransformer coverage",
     "test": "test-jstransformer",
-    "posttest": "xo --space --no-semicolon index.js"
+    "posttest": "xo --space=2 --no-semicolon index.js"
   },
   "engines": {
     "node": ">=4"

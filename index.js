@@ -1,18 +1,18 @@
 'use strict'
 
-var posthtml = require('posthtml')
-var loop = require('simple-loop')
+const posthtml = require('posthtml')
+const loop = require('simple-loop')
 
 exports.name = 'posthtml'
 exports.outputFormat = 'html'
 
 exports.renderAsync = function (str, options) {
-  return new Promise(function (resolve, reject) {
+  return new Promise((resolve, reject) => {
     // Load all desired plugins.
-    var plugins = []
-    var pluginsToLoad = options.plugins || []
-    loop(pluginsToLoad, function (item, i) {
-      var plugin = null
+    const plugins = []
+    const pluginsToLoad = options.plugins || []
+    loop(pluginsToLoad, (item, i) => {
+      let plugin = null
       switch (typeof i) {
         case 'number':
           if (typeof item === 'string') {
@@ -39,7 +39,7 @@ exports.renderAsync = function (str, options) {
     })
 
     // Process with PostHTML.
-    posthtml(plugins).process(str, options).then(function (result) {
+    posthtml(plugins).process(str, options).then(result => {
       resolve(result.html)
     }, reject)
   })
