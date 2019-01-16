@@ -16,23 +16,23 @@ exports.renderAsync = function (str, options) {
       switch (typeof i) {
         case 'number':
           if (typeof item === 'string') {
-            // eslint-disable-next-line import/no-dynamic-require
             plugin = require(item)()
           } else {
             plugin = item
           }
+
           break
         case 'object':
           plugin = i
           break
         case 'string':
-          // eslint-disable-next-line import/no-dynamic-require
           plugin = require(i)(item)
           break
         default:
           plugin = i
           break
       }
+
       if (plugin) {
         plugins.push(plugin)
       }
