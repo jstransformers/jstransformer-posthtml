@@ -5,7 +5,6 @@
 [![Build Status](https://img.shields.io/travis/jstransformers/jstransformer-posthtml/master.svg)](https://travis-ci.org/jstransformers/jstransformer-posthtml)
 [![Coverage Status](https://img.shields.io/codecov/c/github/jstransformers/jstransformer-posthtml/master.svg)](https://codecov.io/gh/jstransformers/jstransformer-posthtml)
 [![Dependency Status](https://img.shields.io/david/jstransformers/jstransformer-posthtml/master.svg)](http://david-dm.org/jstransformers/jstransformer-posthtml)
-
 [![NPM version](https://img.shields.io/npm/v/jstransformer-posthtml.svg)](https://www.npmjs.org/package/jstransformer-posthtml)
 
 ## Installation
